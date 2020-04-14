@@ -67,6 +67,8 @@ const RecipeStyles = styled.div`
     @media (max-width: 780px) {
       grid-template-columns: 1fr;
       justify-content: center;
+      padding: 2rem;
+      margin: 0 auto;
     };
 `;
 
