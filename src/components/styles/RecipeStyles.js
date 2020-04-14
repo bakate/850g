@@ -64,6 +64,10 @@ const RecipeStyles = styled.div`
       line-height: 2rem;
     }
   }
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    };
 `;
 
 export default RecipeStyles;

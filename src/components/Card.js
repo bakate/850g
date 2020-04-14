@@ -4,7 +4,7 @@ import React from 'react';
 import ItemStyles from './styles/ItemStyles';
 import Title from './Title';
 
-const Card = ({ image, title, id, duration, category }) => {
+const Card = ({ image, title, duration, category }) => {
   const [firstImage] = image;
   return (
     <ItemStyles>

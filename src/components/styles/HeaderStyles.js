@@ -5,7 +5,7 @@ const HeaderStyles = styled.div`
     border-bottom: 7px solid ${props => props.theme.black};
      padding-bottom: 2rem;
     display: grid;
-    gap: 0.5rem;
+    gap: 0.3rem;
     margin-top: 2rem;
     grid-template-columns: auto 1fr 1fr;
     justify-content: space-evenly;
