@@ -2,7 +2,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import Hero from '../components/Hero';
-import SEO from "../components/seo";
+import SEO from "../components/SEO";
 import kid from "../images/kid.jpg";
 
 const NotFoundPage= () => (
