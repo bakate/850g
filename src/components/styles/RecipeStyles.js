@@ -9,25 +9,28 @@ const RecipeStyles = styled.div`
   box-shadow: ${({ theme }) => theme.bs};
   gap: 2rem;
   .hero {
-     {
-      width: 100%;
+      width: 400%;
       height: 600px;
-      object-fit: cover;
       margin-top: 1rem;
-    }
+    @media (max-width: 780px) {
+    width: 100%;
+     height: 400px;
+      object-fit: contain;
+   margin-top: 2rem;
+    };
   }
   .infos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: space-between;
     align-items: stretch;
     padding: 2rem;
-    margin: 3rem;
+    margin: 1rem;
     column-gap: 1rem;
 
     .logo {
       width: 4rem;
-      margin-right: 3rem;
+      margin-right: 2rem;
     }
     .withLogo {
       display: flex;

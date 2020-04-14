@@ -6,6 +6,7 @@ const HeaderStyles = styled.div`
      padding-bottom: 2rem;
     display: grid;
     gap: 0.3rem;
+      width: 100%;
     margin-top: 2rem;
     grid-template-columns: auto 1fr 1fr;
     justify-content: space-evenly;
@@ -13,6 +14,7 @@ const HeaderStyles = styled.div`
     @media (max-width: 1300px) {
       grid-template-columns: 1fr;
       justify-content: center;
+       border-bottom: 4px solid ${props => props.theme.black};
     }
   }
 `;

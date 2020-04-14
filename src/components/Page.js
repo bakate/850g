@@ -10,7 +10,9 @@ const Page = ({ children }) => (
     <StyledPage>
       <GlobalStyles />
       <Header />
-      <Inner>{children}</Inner>
+        <Inner>
+        {children}
+        </Inner>
       <Footer />
     </StyledPage>
   </ThemeProvider>
