@@ -14,6 +14,7 @@ const Item = styled.div`
     height: 300px;
     object-fit: cover;
     transition: ${({ theme }) => theme.mainTransition};
+
   }
   p span {
     font-size: 14px;

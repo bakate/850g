@@ -9,15 +9,10 @@ const RecipeStyles = styled.div`
   box-shadow: ${({ theme }) => theme.bs};
   gap: 2rem;
   .hero {
-      width: 400%;
-      height: 600px;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
       margin-top: 1rem;
-    @media (max-width: 780px) {
-    width: 100%;
-     height: 400px;
-      object-fit: contain;
-   margin-top: 2rem;
-    };
   }
   .infos {
     display: grid;
@@ -72,6 +67,7 @@ const RecipeStyles = styled.div`
       justify-content: center;
       padding: 2rem;
       margin: 0 auto;
+
     };
 `;
 
