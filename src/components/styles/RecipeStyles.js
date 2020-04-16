@@ -62,7 +62,7 @@ const RecipeStyles = styled.div`
       line-height: 2rem;
     }
   }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
@@ -91,7 +91,7 @@ const RecipeStyles = styled.div`
     padding: 2rem;
   }
   }
-  .gallery {;
+  .gallery {
     gap: .5rem;
     .img_gallery {
       padding: 0 2rem;
@@ -100,13 +100,14 @@ const RecipeStyles = styled.div`
     }
   }
   .published {
- padding: 2rem;
-   justify-content: flex-start;
+ padding: 0 3rem;
+   /* justify-content: center; */
    align-items: center;
     span {
       font-size: 2rem;
       font-style: italic;
       text-transform: capitalize;
+      /* text-align: center; */
     }
   }
     };

@@ -16,7 +16,7 @@ export const ItemsList = styled.div`
   place-items: center;
   /* margin: 3rem auto; */
   /* max-width: ${({ theme }) => theme.maxWidth}; */
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
