@@ -14,7 +14,6 @@ const Item = styled.div`
     height: 300px;
     object-fit: cover;
     transition: ${({ theme }) => theme.mainTransition};
-
   }
   p span {
     font-size: 14px;
@@ -42,6 +41,14 @@ const Item = styled.div`
   &:hover img {
     opacity: 0.6;
   }
+  @media (max-width: 768px) {
+     display: flex;
+     position: relative;
+    img{
+      flex: 0 1;
+      object-fit: contain;
+    }
+    };
 `;
 
 export default Item;

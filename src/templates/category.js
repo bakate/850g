@@ -15,7 +15,12 @@ export const ItemsList = styled.div`
   gap: 60px;
   place-items: center;
   /* margin: 3rem auto; */
-  max-width: ${({ theme }) => theme.maxWidth};
+  /* max-width: ${({ theme }) => theme.maxWidth}; */
+  @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      margin: 0 auto;
+    };
 `;
 
  export const query = graphql`
