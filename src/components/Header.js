@@ -23,7 +23,7 @@ const Header = () => (
     <div className="bar">
       <LogoStyles>
         <Link to="/">
-          <div>
+          <div className="logo">
             <span className="span1">850</span>
             <span className="span2">grammes</span>
             <span className="span3">la vie dans la cuisine!</span>

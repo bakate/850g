@@ -24,7 +24,7 @@ const LogoStyles = styled.div`
   position: relative;
   z-index: 2;
   transform: skew(-7deg);
-  div {
+  .logo {
     transition: ${({ theme }) => theme.mainTransition};
     .span1 {
       color: ${({ theme }) => theme.green};
@@ -46,7 +46,7 @@ const LogoStyles = styled.div`
   @media (max-width: 768px) {
     margin: 1rem 0;
     text-align: center;
-div {
+.logo {
      font-size: 1.8rem;
     .span1 {
       color: ${({ theme }) => theme.green};
@@ -56,6 +56,7 @@ div {
     }
     .span3 {
       display: none;
+      opacity: 0;
     }
   }
 `;

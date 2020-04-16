@@ -49,7 +49,7 @@ const Recipe = ({ data }) => {
     <RecipeStyles>
 <SEO  title={recette.title}/>
       <div>
-        <Title title={recette.title} center withRow />
+        <Title title={recette.title} center withRow className="title"/>
         <img src={first.url} alt={recette.title} className="hero" />
       </div>
 

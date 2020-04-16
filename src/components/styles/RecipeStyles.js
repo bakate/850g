@@ -66,6 +66,9 @@ const RecipeStyles = styled.div`
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
+      .title {
+        padding:0 2rem;
+      }
       .hero {
       width: 100%;
       height: 250px;
