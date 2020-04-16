@@ -106,7 +106,7 @@ const RecipeStyles = styled.div`
       font-size: 2rem;
       font-style: italic;
       text-transform: capitalize;
-      padding-top: 4rem;
+      padding-top: 5rem;
     }
   }
     };

@@ -11,7 +11,7 @@ const HeaderStyles = styled.div`
     grid-template-columns: auto 1fr 1fr;
     justify-content: space-evenly;
     align-items: center;
-    @media (max-width: 1300px) {
+    @media (max-width: 576px) {
       grid-template-columns: 1fr;
       justify-content: center;
        border-bottom: 4px solid ${props => props.theme.black};
