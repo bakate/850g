@@ -46,6 +46,7 @@ const Item = styled.div`
      position: relative;
     img{
       flex: 0 1;
+      width: 100%;
       object-fit: cover;
     }
     };
