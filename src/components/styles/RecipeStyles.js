@@ -66,7 +66,6 @@ const RecipeStyles = styled.div`
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
-      gap: 0;
       .hero {
       width: 100%;
       height: 250px;
@@ -107,7 +106,7 @@ const RecipeStyles = styled.div`
       font-size: 2rem;
       font-style: italic;
       text-transform: capitalize;
-      /* text-align: center; */
+      padding-top: 4rem;
     }
   }
     };

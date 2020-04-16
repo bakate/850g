@@ -46,7 +46,7 @@ const Item = styled.div`
      position: relative;
     img{
       flex: 0 1;
-      object-fit: contain;
+      object-fit: cover;
     }
     };
 `;

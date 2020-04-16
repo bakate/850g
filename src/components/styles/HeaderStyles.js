@@ -43,7 +43,7 @@ const LogoStyles = styled.div`
       font-weight: bold;
     }
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 576px) {
     margin: 1rem 0;
     text-align: center;
 div {
