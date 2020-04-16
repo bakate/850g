@@ -66,6 +66,49 @@ const RecipeStyles = styled.div`
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
+      gap: 0;
+      .hero {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+     padding: 0rem 5rem;
+  }
+  .infos {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2rem;
+
+    .logo {
+     text-align: center;
+    }
+    .withLogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .markdown {
+    padding: 2rem;
+  }
+  }
+  .gallery {;
+    gap: .5rem;
+    .img_gallery {
+      padding: 0 2rem;
+      object-fit: cover;
+      transition: ${({ theme }) => theme.mainTransition};
+    }
+  }
+  .published {
+ padding: 2rem;
+   justify-content: flex-start;
+   align-items: center;
+    span {
+      font-size: 2rem;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+  }
     };
 `;
 

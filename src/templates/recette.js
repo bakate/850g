@@ -54,19 +54,19 @@ const Recipe = ({ data }) => {
       </div>
 
       <div className="infos">
-        <div>
+        <div >
           <div className="withLogo">
             <img src={farm} alt="logo" className="logo" />
             <Title title="ingredients:" withRow center />
           </div>
-          <ReactMarkdown source={recette.ingredients} />
+          <ReactMarkdown source={recette.ingredients} className="markdown" />
         </div>
         <div>
           <div className="withLogo">
             <img src={cooking} alt="logo" className="logo" />
             <Title title="preparation:" withRow center />
           </div>
-          <ReactMarkdown source={recette?.cooking} />
+          <ReactMarkdown source={recette?.cooking} className="markdown"/>
         </div>
       </div>
       <div className="gallery">
