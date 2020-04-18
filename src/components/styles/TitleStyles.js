@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const TitleStyles = styled.div`
   /* display: grid;
   grid-template-rows: 1fr; */
+  padding: 1rem;
   /* margin: 0.1rem; */
   div {
     text-align: ${props => (props.centerTitle ? 'center' : 'left')};

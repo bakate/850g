@@ -1,10 +1,10 @@
 import React from "react";
 import { CartStateProvider } from "./src/components/context/LocalState";
 import Page from "./src/components/Page";
-export const wrapRootElement = ({ element }) => {
+export const wrapPageElement = ({ element, props }) => {
   return (
  <CartStateProvider>
-    <Page>
+    <Page {...props}>
     {element}
     </Page>
  </CartStateProvider>
