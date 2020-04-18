@@ -37,19 +37,18 @@ const Item = styled.div`
       font-size: 1rem;
       padding: 1rem;
     } */
-  }
+  /* } */
   &:hover img {
     opacity: 0.6;
   }
   @media (max-width: 767px) {
      display: flex;
      position: relative;
-    img{
+    /* img{
       /* flex: 1 0; */
-      width: 100%;
-      object-fit: cover;
-      height: 300px;
-    }
+      /* width: 100%;
+      object-fit: cover; */
+    /* } */
     };
 `;
 

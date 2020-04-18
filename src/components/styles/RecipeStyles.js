@@ -13,6 +13,7 @@ const RecipeStyles = styled.div`
       height: 400px;
       object-fit: cover;
       margin-top: 1rem;
+
   }
   .infos {
     display: grid;
@@ -22,7 +23,6 @@ const RecipeStyles = styled.div`
     padding: 2rem;
     margin: 1rem;
     column-gap: 1rem;
-
     .logo {
       width: 4rem;
       margin-right: 2rem;
@@ -71,14 +71,14 @@ const RecipeStyles = styled.div`
       }
       .hero {
       width: 100%;
-      height: 250px;
-      object-fit: contain;
-     padding: 0rem 5rem;
+      height: 300px;
+      object-fit: cover;
+     padding: 0 7rem;
   }
   .infos {
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 .5rem;
     margin: 2rem;
 
     .logo {
@@ -90,28 +90,40 @@ const RecipeStyles = styled.div`
       align-items: center;
     }
   .markdown {
-    padding: 2rem;
+    padding: 0 4rem;
+    /* margin: 2rem; */
   }
   }
   .gallery {
-    gap: .5rem;
+gap: .5rem;
     .img_gallery {
-      padding: 0 2rem;
-      object-fit: cover;
+      padding: 0 5rem;
+      object-fit: contain;
       transition: var(--transition);
     }
   }
   .published {
- padding: 0 3rem;
-   /* justify-content: center; */
-   align-items: center;
+  display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
     span {
-      font-size: 2rem;
+      font-size: 1rem;
+      /* padding: 1rem; */
+
+    }
+
+ /* padding: 0; */
+   /* justify-content: center; */
+   /* align-items: center; */
+    /* span {
+      font-size: 1.2rem;
       font-style: italic;
       text-transform: capitalize;
-      padding-top: 5rem;
-    }
-  }
+      /* padding: 1rem; */
+    /* } */
+   }
     };
 `;
 

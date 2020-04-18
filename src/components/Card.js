@@ -9,14 +9,14 @@ const Card = ({ image, title, duration, category }) => {
   return (
     <ItemStyles>
       <Title title={title} center />
-      <div>
+      {/* <div> */}
 
       <Link to={`/recettes/${title.split(" ").join("-")}`}>
           <a>
             <img src={firstImage.url} alt={title} />
           </a>
         </Link>
-      </div>
+      {/* </div> */}
       <div>
         <span>{duration} minutes</span>
         <p>{category?.difficulty}</p>
@@ -28,7 +28,7 @@ const Card = ({ image, title, duration, category }) => {
 Card.propTypes = {
   category: PropTypes.object,
   duration: PropTypes.number,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   image: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
 };

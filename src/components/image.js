@@ -9,7 +9,7 @@ export default function Image({ src, alt }) {
     images:allImageSharp
   {
     nodes {
-      fluid {
+      fluid(maxWidth: 440) {
      ...GatsbyImageSharpFluid_withWebp_tracedSVG
         originalName
       }

@@ -31,7 +31,7 @@ return (
       {nodes.map(item => (
         <div className="drops" key={item.id} >
           <li>
-            <Link to={`/${item.name.split(' ').join("-")}` }>
+            <Link to={`/${item.name.split(' ').join("-")}`} className="link">
              {item.name}
           </Link>
           </li>
@@ -48,11 +48,11 @@ const Nav = () => (
         Accueil
       </li>
     </Link>
-    <Link to="/">
-      <ul>
+
+      <li>
         <CategoriesDropdown />
-      </ul>
-    </Link>
+      </li>
+
     <Link to="/about">
       <li>
         La Team

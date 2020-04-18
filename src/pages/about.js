@@ -1,15 +1,14 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import Image from '../components/image';
 import Info from '../components/Info';
 import SEO from "../components/SEO";
-
 
 const aboutPage = () => {
   return (
 
     <div>
       <SEO title="About" />
-<Hero img="/bcg.jpg" />
+<Image src="bcg.jpg" alt="background" />
 <Info />
     </div>
   )

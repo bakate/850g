@@ -91,6 +91,9 @@ button {
         /* border-radius: var(--radius); */
         margin: 1rem;
       }
+&:active {
+  outline: none;
+}
     }
   }
 
@@ -99,12 +102,15 @@ button {
     opacity: 1;
   }
   @media (max-width: 767px) {
+    button {
+      padding: 0;
+    }
   .drops{
     li {
      &:hover {
         background: var(--green);
         text-transform: lowercase;
-        padding: 0;
+        padding: 0 1rem;
         margin: 0;
     }
   }
