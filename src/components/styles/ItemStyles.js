@@ -41,9 +41,9 @@ const Item = styled.div`
   &:hover img {
     opacity: 0.6;
   }
-  @media (max-width: 767px) {
-     display: flex;
-     position: relative;
+  /* @media (max-width: 767px) {
+     display: flex; */
+     /* position: relative; */
     /* img{
       /* flex: 1 0; */
       /* width: 100%;

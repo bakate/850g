@@ -1,16 +1,17 @@
 import React from 'react';
 import Image from '../components/image';
 import Info from '../components/Info';
+import Layout from '../components/Layout';
 import SEO from "../components/SEO";
 
 const aboutPage = () => {
   return (
 
-    <div>
+    <Layout>
       <SEO title="About" />
 <Image src="bcg.jpg" alt="background" />
 <Info />
-    </div>
+    </Layout>
   )
 }
 

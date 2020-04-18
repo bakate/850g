@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Contact from '../components/Contact';
 import Image from '../components/image';
+import Layout from '../components/Layout';
 import SEO from "../components/SEO";
 
 const FormStyles = styled.div`
@@ -15,14 +16,14 @@ const FormStyles = styled.div`
 `;
 
 const AccountPage = () => (
-  <>
+  <Layout>
   <SEO title="Contact"/>
     <Image src="contact.jpg" alt="contact"/>
     {/* <Hero img={contact} title="Hello ✌😃" /> */}
     <FormStyles>
       <Contact />
     </FormStyles>
-  </>
+  </Layout>
 );
 
 export default AccountPage;

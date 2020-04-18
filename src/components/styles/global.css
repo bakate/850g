@@ -15,12 +15,7 @@
   --smallWidth: 300vw;
 
 }
-@font-face {
-   font-family: 'JetBrains Mono';
-   src: url('/JetBrainsMono-Medium.woff2') format('woff2');
-   font-weight: medium;
-   font-style: medium;
- }
+
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -49,9 +44,7 @@
   letter-spacing: var(--spacing);
   text-transform: capitalize;
 }
-.text-main {
-  color: var(--primary);
-}
+
 .main-link {
 padding: 0.5rem 1rem;
 /* display: inline-block; */
@@ -69,15 +62,15 @@ transition: var(--transition);
  /* color: var(--primary); */
   outline-color: var(--green);
 }
+  .styledPage{
+      background: var(--white);
+      color: var(--black);
+    }
+
 .inner{
   max-width: var(--maxWidth);
   margin: 0 auto;
   padding: 2rem;
 }
 
-.styledPage{
-  background: var(--white);
-  color: var(--black);
-
-}
 

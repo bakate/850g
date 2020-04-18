@@ -1,9 +1,8 @@
 import React from "react"
 import { CartStateProvider } from "./src/components/context/LocalState"
-import Page from "./src/components/Page"
 
-export const wrapPageElement = ({ element, props }) => {
+export const wrapPageElement = ({ element }) => {
   return (<CartStateProvider>
-    <Page {...props}>{element}</Page>
+  {element}
     </CartStateProvider>)
 }

@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Layout from '../components/Layout';
 import SEO from "../components/SEO";
 import RecipeStyles from '../components/styles/RecipeStyles';
 import Title from '../components/Title';
@@ -46,6 +47,7 @@ const Recipe = ({ data }) => {
   const good = Date.parse(published);
 
   return (
+    <Layout>
     <RecipeStyles>
 <SEO  title={recette.title}/>
       <div>
@@ -84,6 +86,7 @@ const Recipe = ({ data }) => {
         </span>
       </div>
     </RecipeStyles>
+    </Layout>
   );
 };
 
