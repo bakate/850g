@@ -20,7 +20,7 @@ const NavStyles = styled.ul`
     cursor: pointer;
     color: var(--black);
     font-weight: 800;
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       font-size: 10px;
       padding: 0 5px;
     }
@@ -56,7 +56,7 @@ const NavStyles = styled.ul`
     }
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1200px) {
     border-top: 1px solid var(--grey);
     width: 100%;
     justify-content: center;
@@ -98,6 +98,18 @@ button {
     display: block;
     opacity: 1;
   }
+  @media (max-width: 767px) {
+  .drops{
+    li {
+     &:hover {
+        background: var(--green);
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+    }
+  }
+  }
+}
 `;
 export { NavStyles, OptionStyles };
 

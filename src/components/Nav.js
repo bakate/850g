@@ -48,7 +48,7 @@ const Nav = () => (
         Accueil
       </li>
     </Link>
-    <Link to="/recipe">
+    <Link to="/">
       <ul>
         <CategoriesDropdown />
       </ul>

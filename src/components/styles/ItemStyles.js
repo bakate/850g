@@ -48,6 +48,7 @@ const Item = styled.div`
       /* flex: 1 0; */
       width: 100%;
       object-fit: cover;
+      height: 300px;
     }
     };
 `;

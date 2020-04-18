@@ -13,8 +13,7 @@ const NotFoundPage= () => (
         Oups! Tu Fais du Hors Piste{' '}
       </h2>
       <Link to="/" className="main-link" style={{ marginTop: '2rem' }}>
-          Retour A la maison
-
+        Retour &Agrave; la maison
       </Link>
     </Hero>
   </>
