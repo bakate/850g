@@ -15,8 +15,8 @@ export const ItemsList = styled.div`
   gap: 60px;
   place-items: center;
   /* margin: 3rem auto; */
-  /* max-width: ${({ theme }) => theme.maxWidth}; */
-  @media (max-width: 576px) {
+  /* max-width: var(--maxWidth); */
+  @media (max-width: 767px) {
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;

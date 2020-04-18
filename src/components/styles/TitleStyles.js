@@ -13,7 +13,7 @@ const TitleStyles = styled.div`
     hr {
       height: ${props => (props.hr ? '0.4rem' : '0')};
       width: ${props => (props.hr ? '8rem' : '0')};
-      background: ${props => (props.hr ? props.theme.primary : 'none')};
+      background: ${props => (props.hr ? 'var(--primary) ': 'none')};
       margin: ${props => (props.centerTitle ? '0 auto' : '0')};
     }
   }

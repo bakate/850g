@@ -1,0 +1,83 @@
+
+:root{
+  --green: #96ce66;
+  --black: #393939;
+  --grey: #E1E1E1;
+  --maxWidth: 1200px;
+  --radius: 10px;
+  --bs: 0 12px 24px 0 rgba(0, 0, 0, 0.09);
+  --primary: #ff9d00;
+  --primaryRGBA: rgba(0, 0, 0, 0.3);
+  --darkGrey: #5f5e5e;
+  --white: #fff;
+  --transition: all 0.3s ease-in-out;
+  --spacing: 0.3rem;
+  --smallWidth: 300vw;
+
+}
+@font-face {
+   font-family: 'JetBrains Mono';
+   src: url('/JetBrainsMono-Medium.woff2') format('woff2');
+   font-weight: medium;
+   font-style: medium;
+ }
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.7rem;
+    line-height: 2;
+    font-family: 'JetBrains Mono';
+  }
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  button {
+     font-family: 'JetBrains Mono';
+    }
+
+  .text-title {
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+.text-main {
+  color: var(--primary);
+}
+.main-link {
+padding: 0.5rem 1rem;
+/* display: inline-block; */
+background: var(--primary);
+color: var(--white);
+text-transform: uppercase;
+letter-spacing: var(--spacing);
+outline: 2px solid var(--primary);
+outline-offset:5px;
+border:none;
+transition: var(--transition);
+}
+.main-link :hover {
+  background: var(--green);
+ /* color: var(--primary); */
+  outline-color: var(--green);
+}
+.inner{
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.styledPage{
+  background: var(--white);
+  color: var(--black);
+
+}
+

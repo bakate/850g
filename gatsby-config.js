@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+      // Source the Images
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,8 +17,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -40,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby`,
+        name: `850 Grammes`,
         short_name: `starter`,
         start_url: `/`,
         // background_color: `#663399`,
@@ -53,13 +54,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
 
-    // {
-    //   resolve: "gatsby-source-graphql",
-    //   options: {
-    //     url: "https://rickandmortyapi.com/graphql/",
-    //     typeName: "RickAndMorty"
-    //     fieldName: "rickandmorty",
-    //   },
-    // },
   ],
 }

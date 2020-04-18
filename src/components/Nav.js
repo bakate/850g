@@ -34,7 +34,6 @@ return (
             <Link to={`/${item.name.split(' ').join("-")}` }>
              {item.name}
           </Link>
-
           </li>
 
 </div>

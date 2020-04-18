@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
-  background: ${({ theme }) => theme.grey};
-  color: ${({ theme }) => theme.black};
+  background: var(--grey);
+  color: var(--black);
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -19,10 +19,10 @@ const FooterStyles = styled.footer`
   .icon {
     font-size: 2rem;
     cursor: pointer;
-    color: ${({ theme }) => theme.black};
-    transition: ${({ theme }) => theme.mainTransition};
+    color: var(--black);
+    transition: var(--transition);
     &:hover {
-      color: ${({ theme }) => theme.primary};
+      color: var(--primary);
     }
   }
 

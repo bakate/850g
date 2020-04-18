@@ -1,21 +1,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import "../components/styles/global.css";
 import Footer from './Footer';
 import Header from './Header';
-import { GlobalStyles, Inner, StyledPage, theme } from './styles/GlobalStyles';
 
 const Page = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <StyledPage>
-      <GlobalStyles />
+    <section className="styledPage">
       <Header />
-        <Inner>
+        <section className="inner">
         {children}
-        </Inner>
+        </section>
       <Footer />
-    </StyledPage>
-  </ThemeProvider>
+    </section>
 );
 
 Page.propTypes = {

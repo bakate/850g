@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HeaderStyles = styled.div`
   .bar {
-    border-bottom: 7px solid ${props => props.theme.black};
+    border-bottom: 7px solid var(--black);
      padding-bottom: 2rem;
     display: grid;
     gap: 0.3rem;
@@ -11,10 +11,10 @@ const HeaderStyles = styled.div`
     grid-template-columns: auto 1fr 1fr;
     justify-content: space-evenly;
     align-items: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       grid-template-columns: 1fr;
       justify-content: center;
-       border-bottom: 4px solid ${props => props.theme.black};
+       border-bottom: 4px solid var(--black);
     }
   }
 `;
@@ -25,13 +25,13 @@ const LogoStyles = styled.div`
   z-index: 2;
   transform: skew(-7deg);
   .logo {
-    transition: ${({ theme }) => theme.mainTransition};
+    transition: var(--transition);
     .span1 {
-      color: ${({ theme }) => theme.green};
+      color: var(--green);
       font-size: 1.8rem;
     }
     .span2 {
-      color: ${({ theme }) => theme.primary};
+      color: var(--primary);
       font-size: 1.8rem;
     }
     .span3 {
@@ -43,20 +43,19 @@ const LogoStyles = styled.div`
       font-weight: bold;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     margin: 1rem 0;
     text-align: center;
 .logo {
      font-size: 1.8rem;
     .span1 {
-      color: ${({ theme }) => theme.green};
+      color: var(--green);
     }
     .span2 {
-      color: ${({ theme }) => theme.primary};
+      color: var(--primary);
     }
     .span3 {
       display: none;
-      opacity: 0;
     }
   }
 `;

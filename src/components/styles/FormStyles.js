@@ -39,7 +39,7 @@ const FormStyles = styled.form`
   button,
   input[type='submit'] {
     width: auto;
-    background: ${({ theme }) => theme.primary};
+    background: var(--primary);
     color: white;
     border: 0;
     font-size: 2rem;
@@ -63,10 +63,10 @@ const FormStyles = styled.form`
         #ff9d00 100% /* #fa709a 100% */
       );
     }
-    &[aria-busy='true']::before {
+    /* &[aria-busy='true']::before {
       background-size: 50% auto;
       animation: ${loading} 0.5s linear infinite;
-    }
+    } */
   }
   .form-empty {
     text-align: center;

@@ -14,7 +14,7 @@ function CartStateProvider({ children }) {
   // const [userFromLS, setUserFromLS] = useState();
 
   const [social, setSocial] = useState(socialData);
-  const [user, setUser] = useState();
+  // const [user, setUser] = useState();
 
   // const userLogin = person => {
   //   setUserFromLS(person)

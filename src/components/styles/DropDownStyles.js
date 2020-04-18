@@ -4,14 +4,14 @@ const DropDown = styled.div`
   position: absolute;
   width: 100%;
   z-index: 2;
-  border: 1px solid ${({ theme }) => theme.grey};
+  border: 1px solid var(--grey);
 `;
 
 const DropDownItem = styled.div`
-  border-bottom: 2px solid ${({ theme }) => theme.grey};
+  border-bottom: 2px solid var(--grey);
   background: ${props => (props.highlighted ? props.theme.grey : 'white')};
   padding: 1rem;
-  transition: ${({ theme }) => theme.mainTransition};
+  transition: var(--transition);
   ${props => (props.highlighted ? 'padding-left: 2rem;' : null)};
   display: flex;
   /* justify-content: center; */
@@ -24,3 +24,4 @@ const DropDownItem = styled.div`
   }
 `;
 export { DropDown, DropDownItem };
+

@@ -9,10 +9,10 @@ const SearchStyles = styled.div`
   input {
     padding: 2rem;
     font-size: 2rem;
-    border-color: ${({ theme }) => theme.green};
+    border-color: var(--green);
     text-align: center;
     &:focus {
-      border-color: ${({ theme }) => theme.primary};
+      border-color: var(--primary);
       outline: none;
     }
   }

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const RecipeStyles = styled.div`
   display: grid;
   margin-top: 2rem;
-  background: ${({ theme }) => theme.white};
-  border: 1px solid ${({ theme }) => theme.grey};
-  border-radius: ${({ theme }) => theme.radius};
-  box-shadow: ${({ theme }) => theme.bs};
+  background: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: var(--radius);
+  box-shadow: var(--bs);
   gap: 2rem;
   .hero {
       width: 100%;
@@ -42,10 +42,10 @@ const RecipeStyles = styled.div`
     .img_gallery {
       padding: 1rem;
       object-fit: cover;
-      transition: ${({ theme }) => theme.mainTransition};
+      transition: var(--transition);
       &:hover {
         transform: scale(1.5);
-        border-radius: ${({ theme }) => theme.radius};
+        border-radius: var(--radius);
       }
     }
   }
@@ -62,7 +62,7 @@ const RecipeStyles = styled.div`
       line-height: 2rem;
     }
   }
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
       grid-template-columns: 1fr;
       justify-content: center;
       margin: 0 auto;
@@ -98,7 +98,7 @@ const RecipeStyles = styled.div`
     .img_gallery {
       padding: 0 2rem;
       object-fit: cover;
-      transition: ${({ theme }) => theme.mainTransition};
+      transition: var(--transition);
     }
   }
   .published {
