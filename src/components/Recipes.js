@@ -32,6 +32,5 @@ const {recettes} = data ? data.allStrapiRecette : []
       ))}
     </ItemsList>
   </Center>)
-
       };
 export default Recipes;

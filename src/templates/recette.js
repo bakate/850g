@@ -50,8 +50,8 @@ const Recipe = ({ data }) => {
     <Layout>
     <RecipeStyles>
 <SEO  title={recette.title}/>
-      <div>
-        <Title title={recette.title} center withRow className="title"/>
+        <div className="title">
+        <Title title={recette.title} center withRow />
         <img src={first.url} alt={recette.title} className="hero" />
       </div>
 

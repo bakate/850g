@@ -65,7 +65,7 @@ const RecipeStyles = styled.div`
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
       justify-content: center;
-      margin: 0 auto;
+      margin: 2rem auto;
       .title {
         padding:0 2rem;
       }
@@ -94,13 +94,13 @@ const RecipeStyles = styled.div`
     /* margin: 2rem; */
   }
   }
-  /* .gallery {
+  .gallery {
 gap: .5rem;
     .img_gallery {
       padding: 0 5rem;
-      object-fit: contain;
-      transition: var(--transition);
-    } */
+      /* object-fit: contain;
+      transition: var(--transition); */
+    }
   }
   .published {
   display: flex;

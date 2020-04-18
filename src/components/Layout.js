@@ -5,15 +5,13 @@ import Header from './Header';
 import "./styles/global.css";
 
 const Layout = ({ children }) => (
-  // <section className="styledPage">
-  <div>
+  <>
     <Header />
     <article className="inner">
       {children}
     </article>
     <Footer />
-    </div>
-  // {/* </section> */}
+    </>
 );
 
 Layout.propTypes = {
