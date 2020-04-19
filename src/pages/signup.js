@@ -1,9 +1,11 @@
+import { withAuthenticator } from 'aws-amplify-react';
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import SEO from "../components/SEO";
-import Signin from '../components/Signin';
-import Signup from '../components/Signup';
+import Title from '../components/Title';
+
+
 
 const Column = styled.div`
   display: grid;
@@ -15,10 +17,9 @@ const signupPage = () => (
   <Layout>
   <Column>
   <SEO title="Auth"/>
-    <Signup />
-    <Signin />
+   <Title bgTitle="Enfin, cette page t'attendais depuis un bon moment"/>
   </Column>
   </Layout>
 );
 
-export default signupPage;
+export default withAuthenticator(signupPage, true);

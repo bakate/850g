@@ -72,8 +72,8 @@ const RecipeStyles = styled.div`
       .hero {
       width: 100%;
       height: 300px;
-      object-fit: cover;
-     padding: 0 7rem;
+      object-fit: contain;
+     padding: 4rem;
   }
   .infos {
     justify-content: center;
@@ -98,6 +98,10 @@ const RecipeStyles = styled.div`
 gap: .5rem;
     .img_gallery {
       padding: 0 5rem;
+       &:hover {
+        transform: scale(1.1);
+        border-radius: var(--radius);
+      }
       /* object-fit: contain;
       transition: var(--transition); */
     }

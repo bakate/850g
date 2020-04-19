@@ -62,6 +62,15 @@ const NavStyles = styled.ul`
     justify-content: center;
     font-size: 1.5rem;
   }
+  @media (min-width: 1201px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   ul, li,
+  button {
+    padding: 1rem;
+  }
+  }
 `;
 const OptionStyles = styled.div`
 button {

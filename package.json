@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Bakate",
   "dependencies": {
+    "aws-amplify": "^3.0.8",
+    "aws-amplify-react": "^4.1.7",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "downshift": "^5.1.0",
@@ -38,9 +40,17 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
     "prettier": "^2.0.4"
   }
 }
