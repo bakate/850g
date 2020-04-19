@@ -18,6 +18,7 @@ const InfoStyles = styled.section`
 
   }
   .bloc2 {
+    padding: 2rem;
     grid-area: 'content2';
   }
   @media (max-width: 700px) {
@@ -36,10 +37,10 @@ const InfoStyles = styled.section`
 const Info = () => (
   <InfoStyles>
     <div className="bloc">
-      <Image src="chicken.jpg" alt="about page"/>
+      <Image src="chicken.jpg" alt="about page" title="850 Grammes de Poulet"/>
     </div>
     <div className="bloc2">
-      <Title title="A propos de nous" />
+      <Title title="A propos de moi" />
       <blockquote>
         <b>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -55,7 +56,7 @@ const Info = () => (
         </b>
       </blockquote>
       <Link to="/" className="main-link">
-      Nos Recettes
+      Les Recettes
       </Link>
     </div>
   </InfoStyles>

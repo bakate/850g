@@ -18,8 +18,7 @@ const FormStyles = styled.div`
 const AccountPage = () => (
   <Layout>
   <SEO title="Contact"/>
-    <Image src="contact.jpg" alt="contact"/>
-    {/* <Hero img={contact} title="Hello ✌😃" /> */}
+    <Image src="contact.jpg" alt="contact" title="prenons contact"/>
     <FormStyles>
       <Contact />
     </FormStyles>

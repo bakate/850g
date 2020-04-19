@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Bakate",
   "dependencies": {
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "downshift": "^5.1.0",
     "gatsby": "^2.20.12",
@@ -18,6 +19,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-strapi": "^0.0.12",
     "gatsby-transformer-sharp": "^2.4.3",
+    "js-search": "^2.0.0",
     "lodash.debounce": "^4.0.8",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

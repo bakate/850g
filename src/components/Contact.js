@@ -5,13 +5,13 @@ import Title from './Title';
 const Contact = () => (
   <FormStyles>
     <fieldset>
-      <Title title="Prendre Contact avec Nous" center />
+      <Title title="Prendre Contact avec moi" center />
       <label htmlFor="name">
         Nom
         <input
           type="name"
           name="name"
-          placeholder="comment est-ce qu'on doit t'appeler"
+          placeholder="comment est-ce que je dois t'appeler ?"
           // value={inputs.name}
           // onChange={handleChange}
           autoComplete="name"
@@ -44,7 +44,7 @@ const Contact = () => (
         <textarea
           rows="10"
           name="message"
-          placeholder="Ecris-nous quelques lignes"
+          placeholder="Ecris-moi quelques lignes"
           // value={inputs.name}
           // onChange={handleChange}
           autoComplete="name"
