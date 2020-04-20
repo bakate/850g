@@ -6,6 +6,7 @@ import { CartStateProvider } from "./src/components/context/LocalState";
 Amplify.configure(awsConfig)
 
 export const wrapRootElement = ({ element }) => {
+
    return (
       <CartStateProvider>
     {element}

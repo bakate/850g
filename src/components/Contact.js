@@ -3,7 +3,7 @@ import FormStyles from './styles/FormStyles';
 import Title from './Title';
 
 const Contact = () => (
-  <FormStyles>
+  <FormStyles action="https://formspree.io/mgeljqko" method="POST">
     <fieldset>
       <Title title="Prendre Contact avec moi" center />
       <label htmlFor="name">

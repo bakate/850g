@@ -18,7 +18,7 @@ const FormStyles = styled.div`
 const AccountPage = () => (
   <Layout>
   <SEO title="Contact"/>
-    <Image src="contact.jpg" alt="contact" title="prenons contact"/>
+    <Image src="contact.jpg" alt="contact" title="Une Question ?"/>
     <FormStyles>
       <Contact />
     </FormStyles>

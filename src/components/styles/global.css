@@ -13,7 +13,10 @@
   --transition: all 0.3s ease-in-out;
   --spacing: 0.4rem;
   --smallWidth: 300vw;
-
+--amplify-font-family: 'JetBrains Mono';
+  --amplify-primary-color: #ff6347;
+  --amplify-primary-tint: #ff7359;
+  --amplify-primary-shade: #e0573e;
 }
   html {
     box-sizing: border-box;
