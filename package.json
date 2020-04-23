@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Bakate",
   "dependencies": {
+    "algoliasearch": "^4.1.0",
     "aws-amplify": "^3.0.8",
     "aws-amplify-react": "^4.1.7",
     "axios": "^0.19.2",
@@ -26,6 +27,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
+    "react-instantsearch-dom": "^6.4.0",
     "react-markdown": "^4.3.1",
     "styled-components": "^5.1.0"
   },

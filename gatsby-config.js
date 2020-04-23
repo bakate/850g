@@ -1,31 +1,6 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// const queries = require("./src/lib/algolia")
+require('dotenv').config()
 
-
-
-const myQuery = `{
-  allStrapiRecette {
-    nodes {
-      objectID:id
-      cooking
-      ingredients
-      title
-      category {
-        name
-      }
-    }
-  }
-}
-`;
-
-const queries = [
-  {
-    query: myQuery,
-    transformer: ({ data }) => data.allStrapiRecette.nodes.map(node => node), // optional
-
-  },
-];
 
 module.exports = {
   siteMetadata: {
@@ -58,18 +33,17 @@ module.exports = {
         queryLimit: 1000,
       },
     },
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        // Careful, no not prefix this with GATSBY_, since that way users can change
-        // the data in the index.
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_API_KEY, // for all queries
-        queries,
-        chunkSize: 10000, // default: 1000
-      },
-    },
+  //   {
+  //     resolve: `gatsby-plugin-algolia`,
+  //     options: {
+  //       appId: process.env.ALGOLIA_APP_ID,
+  //       apiKey: process.env.ALGOLIA_ADMIN_KEY,
+  //       indexName: process.env.ALGOLIA_INDEX_NAME,
+  //       queries,
+  //       chunkSize: 10000, // default: 1000
+
+  //   },
+  // },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
