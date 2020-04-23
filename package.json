@@ -40,9 +40,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint **/*.{js,jsx} --quiet"
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "eslint": "6.8.0",
